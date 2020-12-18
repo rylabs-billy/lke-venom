@@ -47,8 +47,6 @@ class LKE_Custer(object):
                 "k8s_version": self.version,
                 "tags": [self.tags],
                 "node_pools": [{"type": self.size, "count": self.count}]}
-        #response = requests.post(endpoint, headers=headers, json=cluster_info).json()
-        #print(json.dumps(response, indent=1)) # pretty json
         response = requests.post(endpoint, headers=headers, json=cluster_info)
         result = json.loads(response.text)
         status_code = response.status_code
