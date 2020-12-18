@@ -5,7 +5,7 @@ Deploy a Kubernetes cluster with the Linode Kubernetes Engine and API.
 Create virtual environment:
 ```
 python3 -m venv env
-source bin/env/activate
+source env/bin/activate
 ```
 Install requirements:
 ```

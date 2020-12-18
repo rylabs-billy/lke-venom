@@ -68,7 +68,7 @@ def main():
     parser.add_argument('--tags=', action='store', dest='tags')
     args = parser.parse_args()
 
-    # substite easier to remember regions and typs with acceptable values 
+    # substitute with easier to remember regions and typs with acceptable values 
     if args.region in REGIONS:
         args.region = REGIONS[args.region]
 
