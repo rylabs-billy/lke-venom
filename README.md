@@ -2,6 +2,10 @@
 
 Deploy a Kubernetes cluster with the Linode Kubernetes Engine and API.
 
+Put your Linode APIv4 [access token](https://www.linode.com/docs/guides/getting-started-with-the-linode-api/#get-an-access-token) into a `.env` file:
+```
+echo 'token="<YOUR_API_TOKEN"' > .env
+```
 Create virtual environment:
 ```
 python3 -m venv env
